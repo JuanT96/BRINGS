@@ -1,0 +1,135 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Arial', sans-serif;
+}
+/*loguin*/
+.login-icon {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  background: white;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  transition: top 0.3s ease;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+}
+
+.login-icon i {
+  font-size: 20px;
+  color: black;
+}
+
+
+/*barra de navegacion*/
+.navbar {
+   position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 50px;
+  height: 50px;
+  padding: 0 0 0 20px; /* solo padding izquierdo */
+  z-index: 1000;
+  transition: top 0.3s;
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.nav-list li {
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.nav-list li a {
+   text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-list li a:hover {
+  color: #00aaff;
+}
+
+.cart-icon i {
+  font-size: 20px;
+  color: black;
+}
+.cart-wrapper {
+   background-color: white;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  height: 100%;
+  margin-left: auto; /* empuja el carrito a la derecha */
+  min-width: 60px;/* largo del carrito*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cart-wrapper a {
+   width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#inicio {
+
+  background-color: black;
+  position: relative;
+  height: 100vh;
+  width: 100vw; /* ← asegura que cubra todo el ancho real de la pantalla */
+  background-image: url('fondoseccion1.png'); /* ajusta ruta */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll; /* scroll para mejor soporte móvil */
+  overflow: hidden;
+  background-attachment: fixed;
+}
+.logo-estatico {
+  position: absolute;
+  top: 30px; /* ajusta según ubicación deseada */
+  left: 30px;
+  z-index: 10;
+}
+
+.logo-estatico img {
+  width: 120px; /* ajusta el tamaño del logo */
+  height: auto;
+  filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.5));
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-list {
+    gap: 15px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  #inicio {
+    background-attachment: scroll;
+    background-position: center top;
+  }
+}
