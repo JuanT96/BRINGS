@@ -12,7 +12,7 @@ window.addEventListener("scroll", () => {
     loginIcon.style.top = "20px";
 
     // El logo debe alinearse con la barra en ambas vistas
-    if (window.innerWidth < 768) {
+    if (window.innerWidth < 960) {
       logoEst.style.top = "70px"; // Ajuste móvil: debajo de la barra
     } else {
       logoEst.style.top = "0px"; // Escritorio: al mismo nivel
