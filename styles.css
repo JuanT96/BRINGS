@@ -5,8 +5,9 @@ html, body {
   width: 100%;
   font-family: 'Arial', sans-serif;
 }
-/*loguin*/
-.login-icon {
+
+/* Ícono login fijo en escritorio */
+.login-icon-fixed {
   position: fixed;
   top: 20px;
   right: 30px;
@@ -22,15 +23,33 @@ html, body {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
 }
 
-.login-icon i {
+.login-icon-fixed i {
   font-size: 20px;
   color: black;
 }
 
+/* Ícono login dentro de la barra: oculto por defecto (escritorio) */
+.login-wrapper {
+  display: none !important;
+}
 
-/*barra de navegacion*/
+/* login en barra (solo visible en móviles) */
+.login-icon-inline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.login-icon-inline i {
+  color: black;
+  font-size: 18px;
+}
+
+/* Barra de navegación */
 .navbar {
-   position: fixed;
+  position: fixed;
   top: 20px;
   left: 50%;
   transform: translateX(-50%);
@@ -38,14 +57,13 @@ html, body {
   border: 2px solid white;
   border-radius: 50px;
   height: 50px;
-  padding: 0 0 0 20px; /* solo padding izquierdo */
+  padding: 0 0 0 20px;
   z-index: 1000;
   transition: top 0.3s;
   backdrop-filter: blur(10px);
-  height: 50px;
   display: flex;
   align-items: center;
-  max-width: 95vw; /* ← Esto es importante para móvil */
+  max-width: 95vw;
 }
 
 .nav-list {
@@ -58,6 +76,7 @@ html, body {
   gap: 30px;
   align-items: center;
 }
+
 .nav-list li {
   display: flex;
   align-items: center;
@@ -65,7 +84,7 @@ html, body {
 }
 
 .nav-list li a {
-   text-decoration: none;
+  text-decoration: none;
   color: white;
   font-weight: bold;
   transition: color 0.3s;
@@ -79,8 +98,9 @@ html, body {
   font-size: 18px;
   color: black;
 }
+
 .cart-wrapper {
-  height: 50px; /* ← mismo que navbar */
+  height: 50px;
   min-width: 50px;
   padding: 0 12px;
   background-color: white;
@@ -89,77 +109,104 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-sizing: border-box; /* clave para evitar overflow o shrink */
+  box-sizing: border-box;
 }
+
 .cart-wrapper a {
-   display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
   width: 100%;
   text-align: center;
 }
-#inicio {
 
+#inicio {
   background-color: black;
   position: relative;
   height: 100vh;
-  width: 100vw; /* ← asegura que cubra todo el ancho real de la pantalla */
-  background-image: url('fondoseccion1.png'); /* ajusta ruta */
+  width: 100vw;
+  background-image: url('fondoseccion1.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: scroll; /* scroll para mejor soporte móvil */
-  overflow: hidden;
   background-attachment: fixed;
+  overflow: hidden;
 }
+
 .logo-estatico {
-  position: fixed;          /* ← importante: cambia de absolute a fixed */
-  top: 20px;
+  position: fixed;
+  top: 0px;
   left: 20px;
   z-index: 999;
   transition: top 0.3s ease;
+  display: flex;
+  justify-content: center;
 }
 
 .logo-estatico img {
- width: 120px;
+  width: 120px;
   height: auto;
   filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.5));
 }
+/*logo responsive*/
+@media (max-width: 768px) {
+   .logo-estatico {
+   top: 70px; /* ✅ Se mantiene fijo, solo ajustamos la posición */
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: center;
+  }
 
+  .logo-estatico img {
+    width: 60px;   /* opcional: tamaño más pequeño en móvil */
+  }
+}
 /* Responsive */
 @media (max-width: 768px) {
   .navbar {
     height: 45px;
+    max-width: 95vw;
+    padding-left: 15px;
   }
 
   .nav-list {
-    gap: 10px;
+    gap: 0px;
     font-size: 12px;
-    width: auto;          /* ← muy importante */
-    flex-wrap: nowrap;    /* evita que salte de línea */
+    width: auto;
+    flex-wrap: nowrap;
   }
 
   .nav-list li {
-    padding: 0 8px;       /* reduce espacio por opción */
+    padding: 0 8px;
   }
 
   .cart-wrapper {
-    min-width: 45px;      /* reduce el espacio del carrito */
+    min-width: 45px;
     height: 45px;
-    padding: 0 10px;
+    padding: 0;
   }
 
   .cart-icon i {
     font-size: 16px;
   }
-}
-.nav-list {
-  width: auto; /* en vez de 100% */
-}
-@media (max-width: 768px) {
+
   #inicio {
     background-attachment: scroll;
     background-position: center top;
+  }
+
+  .login-icon-fixed {
+    display: none;
+  }
+
+  .login-wrapper {
+    display: flex !important;
+    background-color: white;
+    height: 100%;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
   }
 }

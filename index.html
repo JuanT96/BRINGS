@@ -9,21 +9,29 @@
 </head>
 <body>
 <header>
-	<!-- loguin -->
   <nav class="navbar" id="navbar">
     <ul class="nav-list">
       <li><a href="#inicio">Inicio</a></li>
       <li><a href="#productos">Productos</a></li>
       <li><a href="#soporte">Soporte</a></li>
       <li><a href="#contacto">Contáctanos</a></li>
+
+      <!-- Ícono login integrado (oculto en desktop, visible en móvil) -->
+      <li class="login-wrapper">
+        <a href="#login" class="login-icon-inline"><i class="fas fa-user"></i></a>
+      </li>
+
+      <!-- Ícono carrito -->
       <li class="cart-wrapper">
-  <a href="#carrito" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
-</li>
+        <a href="#carrito" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+      </li>
     </ul>
   </nav>
-  <div class="login-icon" id="loginIcon">
-  		<a href="#login"><i class="fas fa-user"></i></a>
-	</div>
+
+  <!-- Ícono login independiente (solo visible en escritorio) -->
+  <div class="login-icon-fixed" id="loginIcon">
+    <a href="#login"><i class="fas fa-user"></i></a>
+  </div>
 </header>
 <main>
 
