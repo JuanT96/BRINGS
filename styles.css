@@ -162,6 +162,40 @@ html, body {
     width: 60px;   /* opcional: tamaño más pequeño en móvil */
   }
 }
+
+#tx1{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;       /* Centrado vertical */
+  justify-content: flex-end; /* Alineado a la derecha */
+  padding-right: 5%;
+  box-sizing: border-box;
+}
+#tx1-1 {
+  color: white;
+  text-align: right;
+  max-width: 600px;
+}
+
+#tx1-1 h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+#tx1-1 h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#tx1-1 p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+
+
+
 /* Responsive */
 @media (max-width: 768px) {
   .navbar {
