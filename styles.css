@@ -44,6 +44,7 @@ html, body {
   backdrop-filter: blur(10px);
   display: flex;
   align-items: center;
+  max-width: 95vw; /* ← Esto es importante para móvil */
 }
 
 .nav-list {
@@ -53,6 +54,8 @@ html, body {
   display: flex;
   height: 100%;
   width: 100%;
+  gap: 30px;
+  align-items: center;
 }
 .nav-list li {
   display: flex;
@@ -80,11 +83,12 @@ html, body {
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
   height: 100%;
-  margin-left: auto; /* empuja el carrito a la derecha */
-  min-width: 60px;/* largo del carrito*/
+  min-width: 50px;        /* asegúrate de que sea suficientemente ancho */
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0 10px;        /* opcional: añade algo de espacio interno */
+  box-sizing: border-box; /* ← importante para respetar padding */
 }
 .cart-wrapper a {
    width: 100%;
@@ -122,10 +126,35 @@ html, body {
 
 /* Responsive */
 @media (max-width: 768px) {
-  .nav-list {
-    gap: 15px;
-    font-size: 14px;
+  .navbar {
+    max-width: 70vw;
+    padding: 0 10px;
+    height: 45px;
   }
+
+  .nav-list {
+    gap: 10px;
+    font-size: 12px;
+    width: auto;          /* ← muy importante */
+    flex-wrap: nowrap;    /* evita que salte de línea */
+  }
+
+  .nav-list li {
+    padding: 0 8px;       /* reduce espacio por opción */
+  }
+
+  .cart-wrapper {
+    min-width: 45px;      /* reduce el espacio del carrito */
+    height: 100%;
+    padding: 0;
+  }
+
+  .cart-icon i {
+    font-size: 16px;
+  }
+}
+.nav-list {
+  width: auto; /* en vez de 100% */
 }
 @media (max-width: 768px) {
   #inicio {
