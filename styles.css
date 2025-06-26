@@ -230,15 +230,44 @@ html, body {
 }
 
 .iconos-productos img {
-  width: 60px;
+   width: 60px;
   height: auto;
-  filter: brightness(200%) drop-shadow(0 0 10px white);
+  filter: drop-shadow(0 0 8px #00ffea) brightness(1.5);
+  animation: flotando 3s ease-in-out infinite;
+  transition: transform 0.3s ease;
 }
 
 .iconos-productos img:hover {
   transform: scale(1.1);
 }
+/* Efectos específicos para cada color */
+.icono1 {
+  filter: drop-shadow(0 0 8px #00ffff) brightness(1.5); /* Azul cyan */
+}
+.icono1:hover {
+  filter: drop-shadow(0 0 12px #00ffff) brightness(2);
+}
 
+.icono2 {
+  filter: drop-shadow(0 0 8px #ff00ff) brightness(1.5); /* Fucsia */
+}
+.icono2:hover {
+  filter: drop-shadow(0 0 12px #ff00ff) brightness(2);
+}
+
+.icono3 {
+  filter: drop-shadow(0 0 8px #39ff14) brightness(1.5); /* Verde neón */
+}
+.icono3:hover {
+  filter: drop-shadow(0 0 12px #39ff14) brightness(2);
+}
+
+.icono4 {
+  filter: drop-shadow(0 0 8px #ff6b00) brightness(1.5); /* Naranja neón */
+}
+.icono4:hover {
+  filter: drop-shadow(0 0 12px #ff6b00) brightness(2);
+}
 
 /*texto seccion2*/
 .seccion2 {
