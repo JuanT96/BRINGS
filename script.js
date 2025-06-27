@@ -26,3 +26,19 @@ window.addEventListener("scroll", () => {
 
   prevScrollPos = currentScrollPos;
 });
+//slider de imagenes
+document.addEventListener("DOMContentLoaded", function () {
+    const slides = document.querySelectorAll(".slider-seccion2 .slide");
+    let index = 0;
+
+    function showNextSlide() {
+      slides.forEach((slide, i) => {
+        slide.classList.remove("active");
+      });
+      slides[index].classList.add("active");
+      index = (index + 1) % slides.length;
+    }
+
+    showNextSlide(); // Mostrar la primera
+    setInterval(showNextSlide, 3000); // Cambiar cada 3 segundos
+  });
