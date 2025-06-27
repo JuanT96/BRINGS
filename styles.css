@@ -1,3 +1,4 @@
+@import url('https://fonts.cdnfonts.com/css/poppins?styles=170435');
 html, body {
   margin: 0;
   padding: 0;
@@ -125,7 +126,7 @@ html, body {
   background-color: black;
   position: relative;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background-image: url('fondoseccion1.png');
   background-size: cover;
   background-position: center;
@@ -136,6 +137,15 @@ html, body {
 #productos {
   background-color: black;
   background-image: url('fondoseccion2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 80px 20px;
+}
+#soporte {
+  background-color: black;
+  background-image: url('fondoseccion3.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -160,7 +170,7 @@ html, body {
 /*logo responsive*/
 @media (max-width: 960px) {
    .logo-estatico {
-   top: 70px; /* ✅ Se mantiene fijo, solo ajustamos la posición */
+   top: 120px; /* ✅ Se mantiene fijo, solo ajustamos la posición */
     left: 50%;
     transform: translateX(-50%);
     justify-content: center;
@@ -173,7 +183,7 @@ html, body {
 
 #tx1{
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   display: flex;
   align-items: center;       /* Centrado vertical */
   justify-content: flex-end; /* Alineado a la derecha */
@@ -183,22 +193,37 @@ html, body {
 #tx1-1 {
   color: white;
   text-align: right;
-  max-width: 600px;
+  max-width: 900px;
 }
 
 #tx1-1 h1 {
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
+  font-size: 5rem;
+  margin-bottom: -3rem;
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800px;
+  font-style: normal;
+-webkit-text-stroke: 0.1rem white;;
+  color: transparent;
 }
 
+
 #tx1-1 h2 {
-  font-size: 2rem;
+  font-size: 5rem;
   margin-bottom: 1rem;
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800px;
+  font-style: normal;
 }
 
 #tx1-1 p {
-  font-size: 1.2rem;
-  line-height: 1.5;
+  font-size: 1.8rem;
+  line-height: 1.4;
+  font-family: 'Poppins', sans-serif;
+  max-width: 800px;
+  text-shadow: 0 0 0.2rem black, 0 0 0.2rem black,
+    0 0 0.2rem black;
 }
 /*fondo2*/
 .seccion-con-imagen {
@@ -219,7 +244,7 @@ html, body {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: center;/
+  align-items: center;
 }
 .iconos-productos {
   display: flex;
@@ -227,10 +252,11 @@ html, body {
   flex-wrap: wrap;
   gap: 20px;
   margin-bottom: 40px;
+  filter: invert(100%)
 }
 
 .iconos-productos img {
-   width: 60px;
+  width: 60px;
   height: auto;
   filter: drop-shadow(0 0 8px #00ffea) brightness(1.5);
   animation: flotando 3s ease-in-out infinite;
@@ -271,7 +297,7 @@ html, body {
 
 /*texto seccion2*/
 .seccion2 {
-   display: flex;
+  display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -280,19 +306,24 @@ html, body {
 }
 
 .texto-izquierda {
-  flex: 1 1 300px;
+  flex: 0.2 1 300px;
   color: white;
   max-width: 500px;
 }
 
 .texto-izquierda h2 {
-  font-size: 2.5rem;
+  font-size: 5rem;
   margin-bottom: 1rem;
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800px;
+  font-style: normal;
 }
 
 .texto-izquierda p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   line-height: 1.6;
+  font-family: 'Poppins', sans-serif;
 }
 /* Responsive */
 @media (max-width: 768px) {
@@ -324,8 +355,10 @@ html, body {
   }
 
   #inicio {
-    background-attachment: scroll;
-    background-position: center top;
+    background-image: url('fondoseccion1Movil.png') !important;
+    background-position: center top !important;
+    background-size: cover !important;
+    background-attachment: scroll !important;
   }
 
   .login-icon-fixed {
@@ -342,6 +375,10 @@ html, body {
     box-sizing: border-box;
   }
 }
+.imagen-derecha {
+    width: 70%;           /* Reduce el tamaño (ajusta según necesidad) */
+    margin-left: 20px;    /* Mueve la imagen un poco a la derecha */
+  }
 .imagen-derecha-wrapper {
   flex: 1 1 300px;
   display: flex;
@@ -381,3 +418,42 @@ html, body {
 .iconos-productos img:hover {
   transform: scale(1.1);
 }
+/* 📱 Ajustes responsivos para pantallas pequeñas */
+@media (max-width: 768px) {
+  #tx1 {
+    padding-right: 20px;
+    padding-left: 20px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #tx1-1 {
+    max-width: 100%;
+    text-shadow: 0 0 5px black;
+  }
+  #tx1-1 h1 {
+    font-size: 2.5rem;
+    -webkit-text-stroke: 0.05rem white;
+    margin-bottom: 0!important;  /* ✅ Espacio entre los títulos */
+  }
+
+  #tx1-1 h2 {
+    font-size: 2.5rem;
+    margin-top: 0;
+  }
+
+  #tx1-1 p {
+    font-size: 1rem;
+    line-height: 1.4;
+    max-width: 100%;
+  }
+
+  .texto-izquierda h2 {
+    font-size: 2.5rem;
+  }
+
+  .texto-izquierda p {
+    font-size: 1rem;
+  }
+}
+
