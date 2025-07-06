@@ -145,7 +145,7 @@ html, body {
 }
 #soporte {
   background-color: black;
-  background-image: url('fondoseccion3.png');
+  background-image: url('productosSeccion3/soportebg.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -407,7 +407,56 @@ html, body {
 .slider-seccion2 .slide.active {
   opacity: 1;
 }
+.robot1 {
+    width: 30%;           /* Reduce el tamaño (ajusta según necesidad) */
+    margin-right: 80px;    /* Mueve la imagen un poco a la derecha */
+    margin-left: 50px;
+  }
 
+  #tx2{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;       /* Centrado vertical */
+  justify-content: flex-start; /* Alineado a la derecha */
+  padding-right: 5%;
+  box-sizing: border-box;
+}
+#tx2-1 {
+  color: white;
+  text-align: left;
+  max-width: 900px;
+  margin-left: 120px;
+}
+
+#tx2-1 h1 {
+  font-size: 5rem;
+  margin-bottom: -3rem;
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800px;
+  font-style: normal;
+-webkit-text-stroke: 0.1rem white;;
+  color: transparent;
+}
+
+
+#tx2-1 h2 {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800px;
+  font-style: normal;
+}
+
+#tx2-1 p {
+  font-size: 1.8rem;
+  line-height: 1.4;
+  font-family: 'Poppins', sans-serif;
+  max-width: 800px;
+  text-shadow: 0 0 0.2rem black, 0 0 0.2rem black,
+    0 0 0.2rem black;
 /* 📱 Responsive */
 @media (max-width: 768px) {
   .seccion2 {
