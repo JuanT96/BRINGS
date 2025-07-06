@@ -172,7 +172,7 @@ html, body {
 /*logo responsive*/
 @media (max-width: 960px) {
    .logo-estatico {
-   top: 120px; /* ✅ Se mantiene fijo, solo ajustamos la posición */
+   top: 60px; /* ✅ Se mantiene fijo, solo ajustamos la posición */
     left: 50%;
     transform: translateX(-50%);
     justify-content: center;
