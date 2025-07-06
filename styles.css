@@ -67,7 +67,7 @@ html, body {
 }
 
 .nav-list {
-  list-style: none;
+    list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
@@ -132,6 +132,7 @@ html, body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   overflow: hidden;
+  overflow-x: hidden;
 }
 #productos {
   background-color: black;
@@ -141,6 +142,7 @@ html, body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   padding: 80px 20px;
+  overflow-x: hidden;
 }
 #soporte {
   background-color: black;
@@ -150,6 +152,7 @@ html, body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   padding: 80px 20px;
+  overflow-x: hidden;
 }
 .logo-estatico {
   position: fixed;
@@ -407,9 +410,9 @@ html, body {
   opacity: 1;
 }
 .robot1 {
-    width: 30%;           /* Reduce el tamaño (ajusta según necesidad) */
-    margin-right: 80px;    /* Mueve la imagen un poco a la derecha */
-    margin-left: 50px;
+  width: 60%;
+  margin: 20px auto;
+  display: block;
   }
 
   #tx2{
