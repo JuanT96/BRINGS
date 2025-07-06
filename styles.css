@@ -20,7 +20,7 @@ html, body {
   align-items: center;
   justify-content: center;
   z-index: 999;
-  transition: top 0.3s ease;
+  transition: none; /* ✅ elimina la transición de top */
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
 }
 
@@ -60,7 +60,6 @@ html, body {
   height: 50px;
   padding: 0 0 0 20px;
   z-index: 1000;
-  transition: top 0.3s;
   backdrop-filter: blur(10px);
   display: flex;
   align-items: center;
@@ -157,7 +156,7 @@ html, body {
   top: 0px;
   left: 20px;
   z-index: 999;
-  transition: top 0.3s ease;
+  transition: none; /* ✅ elimina la animación de top */
   display: flex;
   justify-content: center;
 }
