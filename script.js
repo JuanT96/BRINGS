@@ -44,3 +44,9 @@ document.addEventListener("DOMContentLoaded", function () {
     showNextSlide(); // Mostrar la primera
     setInterval(showNextSlide, 3000); // Cambiar cada 3 segundos
   });
+
+// Navegacion Tienda
+ function toggleSubmenu() {
+    const submenu = document.querySelector('.submenu-movil');
+    submenu.classList.toggle('active');
+  }

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+	  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="carritopage.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@800&display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/poppins?styles=170435" rel="stylesheet">
+  <title>BRINGX TIENDA EN LINEA</title>
+</head>
+<body>
+<header>
+  <nav class="navbar" id="navbar">
+  <ul class="nav-list">
+    <!-- Submenú solo para móvil -->
+    <li class="submenu-movil">
+      <a href="javascript:void(0);" onclick="toggleSubmenu()">Video ▾</a>
+      <ul class="submenu-list">
+        <li><a href="#Pantallas">Pantallas</a></li>
+        <li><a href="#Graficas">Graficas</a></li>
+        <li><a href="#Cams">Cams</a></li>
+        <li><a href="#Capturadoras">Capturadoras</a></li>
+      </ul>
+    </li>
+
+    <!-- Estos solo visibles en desktop -->
+    <li class="solo-desktop"><a href="#Pantallas">Pantallas</a></li>
+    <li><a href="#Audifonos">Audifonos</a></li>
+    <li class="solo-desktop"><a href="#Graficas">Graficas</a></li>
+    <li><a href="#Controles">Controles</a></li>
+    <li class="solo-desktop"><a href="#Cams">Cams</a></li>
+    <li><a href="#Microfonos">Microfonos</a></li>
+    <li class="solo-desktop"><a href="#Capturadoras">Capturadoras</a></li>
+
+    <li class="login-wrapper">
+      <a href="#login" class="login-icon-inline"><i class="fas fa-user"></i></a>
+    </li>
+    <li class="cart-wrapper">
+      <a href="#" onclick="abrirModal()" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+    </li>
+  </ul>
+</nav>
+
+  <!-- Ícono login independiente (solo visible en escritorio) -->
+  <div class="login-icon-fixed" id="loginIcon">
+    <a href="#login"><i class="fas fa-user"></i></a>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h1 class="titulo">CATÁLOGO DE PRODUCTOS</h1>
+</header>
+
+<main class="contenedor-principal">
+	<div class="logo-estatico" id="logoEst">
+  <img src="LB.png" alt="Logo BRINGS" />
+	</div>
+<section id="Pantallas">
+    <!-- 🔹 SECCIÓN: Pantallas -->
+    <section class="seccion-productos">
+      <h2>Pantallas</h2>
+      <div class="grid-productos">
+        <div class="producto-card">
+          <img src="https://http2.mlstatic.com/D_NQ_NP_2X_951719-MLA84733958428_052025-F.webp" alt="001" />
+          <h3>Monitor Gamer LG UltraGear 27"</h3>
+          <p class="precio">$1.050.000</p>
+          <div class="acciones">
+            <button onclick="agregarAlCarrito('p001')" class="btn agregar">➕ Agregar</button>
+            <button class="btn enviar" onclick="abrirModal()">🛒 Tu Carrito</button>
+          </div>
+
+        </div>
+<div class="producto-card">
+          <img src="https://http2.mlstatic.com/D_NQ_NP_2X_827699-MLU74975109969_032024-F.webp" alt="002" />
+          <h3>Monitor Gamer Xiaomi con pantalla de 34" 180Hz y resolución WQHD</h3>
+          <p class="precio">$1.485.000</p>
+          <div class="acciones">
+            <button onclick="agregarAlCarrito('p002')" class="btn agregar">➕ Agregar</button>
+            <button class="btn enviar" onclick="abrirModal()">🛒 Tu Carrito</button>
+          </div>
+          
+        </div>
+<div class="producto-card">
+          <img src="https://http2.mlstatic.com/D_NQ_NP_2X_861432-MLU78838667682_092024-F.webp" alt="003" />
+          <h3>Monitor Gamer Asus con pantalla de 27" 75Hz resolución WQHD</h3>
+          <p class="precio">$1.725.000</p>
+          <div class="acciones">
+            <button onclick="agregarAlCarrito('p003')" class="btn agregar">➕ Agregar</button>
+            <button class="btn enviar" onclick="abrirModal()">🛒 Tu Carrito</button>
+          </div>
+          
+        </div>
+ <div class="producto-card">
+          <img src="https://http2.mlstatic.com/D_NQ_NP_2X_835617-MLU70462000211_072023-F.webp" alt="004" />
+          <h3>Monitor Gamer Samsung con pantalla de 24" 75Hz y resolución Full HD</h3>
+          <p class="precio">$599.000</p>
+          <div class="acciones">
+            <button onclick="agregarAlCarrito('p004')" class="btn agregar">➕ Agregar</button>
+            <button class="btn enviar" onclick="abrirModal()">🛒 Tu Carrito</button>
+          </div>
+
+        </div>
+         <div class="producto-card">
+          <img src="https://http2.mlstatic.com/D_NQ_NP_2X_848187-MLA84546358426_052025-F.webp" alt="005" />
+          <h3>Monitor LG Ips Ultrawide Full Hd De 34 21:9 Y Amd Freesync Color Negro 110/220V</h3>
+          <p class="precio">$1.299.000</p>
+          <div class="acciones">
+            <button onclick="agregarAlCarrito('p005')" class="btn agregar">➕ Agregar</button>
+            <button class="btn enviar" onclick="abrirModal()">🛒 Tu Carrito</button>
+          </div>
+
+        </div>
+         <div class="producto-card">
+          <img src="https://http2.mlstatic.com/D_NQ_NP_2X_864759-MLA84262098806_052025-F.webp" alt="006" />
+          <h3>Monitor Gamer Rog Strix Fhd Fast Ips 310hz 1ms Gtg Xg259cms Color Negro"</h3>
+          <p class="precio">$1.515.000</p>
+          <div class="acciones">
+            <button onclick="agregarAlCarrito('p006')" class="btn agregar">➕ Agregar</button>
+            <button class="btn enviar" onclick="abrirModal()">🛒 Tu Carrito</button>
+          </div>
+
+        </div>
+        <!-- Puedes duplicar este div para más productos en esta sección -->
+      </div>
+    </section>
+<section id="Audifonos">
+    <!-- 🔹 SECCIÓN: Audífonos -->
+    <section class="seccion-productos">
+      <h2>Audífonos</h2>
+      <div class="grid-productos">
+        <div class="producto-card">
+          <img src="https://http2.mlstatic.com/D_NQ_NP_2X_804334-MLU78537057657_082024-F.webp" alt="007" />
+          <h3>Audífonos Gaming Hyperx 4p5m2aa Cloud Orbit S Color Negro Color de la luz Sin Luz</h3>
+          <p class="precio">$730.000</p>
+          <div class="acciones">
+            <button onclick="agregarAlCarrito('p007')" class="btn agregar">➕ Agregar</button>
+            <button class="btn enviar" onclick="abrirModal()">🛒 Tu Carrito</button>
+          </div>
+        </div>
+
+        <div class="producto-card">
+          <img src="https://http2.mlstatic.com/D_NQ_NP_2X_704310-MLA84549541734_052025-F.webp" alt="008" />
+          <h3>Auriculares Gaming Hyperx Cloud Flight Color Negro</h3>
+          <p class="precio">$599.000</p>
+          <div class="acciones">
+            <button onclick="agregarAlCarrito('p008')" class="btn agregar">➕ Agregar</button>
+            <button class="btn enviar" onclick="abrirModal()">🛒 Tu Carrito</button>
+          </div>
+        </div>
+      <div class="producto-card">
+          <img src="https://http2.mlstatic.com/D_NQ_NP_2X_689770-MLA42169945079_062020-F.webp" alt="009" />
+          <h3>Auriculares Headset Hyperx Orbit 7.1</h3>
+          <p class="precio">$1.390.000</p>
+          <div class="acciones">
+            <button onclick="agregarAlCarrito('p009')" class="btn agregar">➕ Agregar</button>
+            <button class="btn enviar" onclick="abrirModal()">🛒 Tu Carrito</button>
+          </div>
+        </div>
+      <div class="producto-card">
+          <img src="https://http2.mlstatic.com/D_NQ_NP_2X_828043-MCO72091454196_102023-F.webp" alt="010" />
+          <h3>Cable De Audio Tipo Mix Para Audífonos Hyperx Cloud Alpha</h3>
+          <p class="precio">$35.000</p>
+          <div class="acciones">
+            <button onclick="agregarAlCarrito('p010')" class="btn agregar">➕ Agregar</button>
+            <button class="btn enviar" onclick="abrirModal()">🛒 Tu Carrito</button>
+          </div>
+        </div>
+      <div class="producto-card">
+          <img src="https://http2.mlstatic.com/D_NQ_NP_2X_671971-MLU72574184778_112023-F.webp" alt="011" />
+          <h3>Auriculares gamer inalámbricos HyperX Cloud Stinger S HHSS1S-AA negro</h3>
+          <p class="precio">$185.000</p>
+          <div class="acciones">
+            <button onclick="agregarAlCarrito('p011')" class="btn agregar">➕ Agregar</button>
+            <button class="btn enviar" onclick="abrirModal()">🛒 Tu Carrito</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Graficas">
+    <!-- 🔹 SECCIÓN: Tarjetas De Video -->
+    <section class="seccion-productos">
+      <h2>Tarjetas De Video</h2>
+      <div class="grid-productos">
+        <div class="producto-card">
+          <img src="https://http2.mlstatic.com/D_NQ_NP_2X_926851-MCO83475857848_042025-F.webp" alt="012" />
+          <h3>Tarjeta Gráfica Msi Rtx 5070 12gb Gddr7 Ventus Oc X3</h3>
+          <p class="precio">$4.650.000</p>
+          <div class="acciones">
+            <button onclick="agregarAlCarrito('p012')" class="btn agregar">➕ Agregar</button>
+            <button class="btn enviar" onclick="abrirModal()">🛒 Tu Carrito</button>
+          </div>
+        </div>
+
+        <div class="producto-card">
+          <img src="https://http2.mlstatic.com/D_NQ_NP_2X_613496-MCO83681377647_042025-F.webp" alt="013" />
+          <h3>Tarjeta Grafica Inno3d Geforce Rtx 5080 X3 Oc White 16gb</h3>
+          <p class="precio">$6.420.000</p>
+          <div class="acciones">
+            <button onclick="agregarAlCarrito('p013')" class="btn agregar">➕ Agregar</button>
+            <button class="btn enviar" onclick="abrirModal()">🛒 Tu Carrito</button>
+          </div>
+        </div>
+      <div class="producto-card">
+          <img src="https://http2.mlstatic.com/D_NQ_NP_2X_697272-MLA79474716510_102024-F.webp" alt="014" />
+          <h3>Tarjeta Gráfica Geforce Rtx 4060 Asus Dual 8gb Oc</h3>
+          <p class="precio">$2.290.000</p>
+          <div class="acciones">
+            <button onclick="agregarAlCarrito('p014')" class="btn agregar">➕ Agregar</button>
+            <button class="btn enviar" onclick="abrirModal()">🛒 Tu Carrito</button>
+          </div>
+        </div>
+      <div class="producto-card">
+          <img src="https://http2.mlstatic.com/D_NQ_NP_2X_676816-MCO86281482785_062025-F.webp" alt="015" />
+          <h3>Tarjeta Grafica Msi Geforce Rtx 3050 Gaming X 6gb Gddr6</h3>
+          <p class="precio">$1.090.000</p>
+          <div class="acciones">
+            <button onclick="agregarAlCarrito('p015')" class="btn agregar">➕ Agregar</button>
+            <button class="btn enviar" onclick="abrirModal()">🛒 Tu Carrito</button>
+          </div>
+        </div>
+      </div>
+    </section>
+<section id="Controles">
+    <!-- 🔹 SECCIÓN: CONTROLES XBOX Y PLAY -->
+    <section class="seccion-productos">
+      <h2>Controles</h2>
+      <div class="grid-productos">
+        <div class="producto-card">
+          <img src="https://http2.mlstatic.com/D_NQ_NP_2X_982250-MCO75131838751_032024-F.webp" alt="016" />
+          <h3>Control Xbox One Series S/x Blanco Bluetooth Compatible Pc</h3>
+          <p class="precio">$290.000</p>
+          <div class="acciones">
+            <button onclick="agregarAlCarrito('p016')" class="btn agregar">➕ Agregar</button>
+            <button class="btn enviar" onclick="abrirModal()">🛒 Tu Carrito</button>
+          </div>
+        </div>
+
+        <div class="producto-card">
+          <img src="https://http2.mlstatic.com/D_NQ_NP_2X_973394-MLU74649860089_022024-F.webp" alt="Audífono 1" />
+          <h3>Control Ps5 Dualsense Blanco</h3>
+          <p class="precio">$320.000</p>
+          <div class="acciones">
+            <button onclick="agregarAlCarrito('p017')" class="btn agregar">➕ Agregar</button>
+            <button class="btn enviar" onclick="abrirModal()">🛒 Tu Carrito</button>
+          </div>
+        </div>
+      <div class="producto-card">
+          <img src="https://http2.mlstatic.com/D_NQ_NP_2X_988009-MLA84856612175_052025-F.webp" alt="Audífono 1" />
+          <h3>Control Inalámbrico Dualsense Starlight Blue | G0006615</h3>
+          <p class="precio">$299.000</p>
+          <div class="acciones">
+            <button onclick="agregarAlCarrito('p018')" class="btn agregar">➕ Agregar</button>
+            <button class="btn enviar" onclick="abrirModal()">🛒 Tu Carrito</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Cams">
+ <!-- 🔹 SECCIÓN: Web Cams -->
+    <section class="seccion-productos">
+      <h2>Web Cams</h2>
+      <div class="grid-productos">
+        <div class="producto-card">
+          <img src="https://http2.mlstatic.com/D_NQ_NP_2X_745072-MLU75193448603_032024-F.webp" alt="Audífono 1" />
+          <h3>Logitech Brio, Ultra Hd Pro Webcam 4k / Rightlight 3 Con Hdr Color Negro</h3>
+          <p class="precio">$650.000</p>
+          <div class="acciones">
+            <button onclick="agregarAlCarrito('p019')" class="btn agregar">➕ Agregar</button>
+            <button class="btn enviar" onclick="abrirModal()">🛒 Tu Carrito</button>
+          </div>
+        </div>
+
+        <div class="producto-card">
+          <img src="https://http2.mlstatic.com/D_NQ_NP_2X_760342-MLA49170463523_022022-F.webp" alt="Audífono 1" />
+          <h3>Logitech C920s Pro, Webcam Hd / Videochats En Full Hd 1080p Color Negro</h3>
+          <p class="precio">$310.000</p>
+          <div class="acciones">
+            <button onclick="agregarAlCarrito('p020')" class="btn agregar">➕ Agregar</button>
+            <button class="btn enviar" onclick="abrirModal()">🛒 Tu Carrito</button>
+          </div>
+        </div>
+      <div class="producto-card">
+          <img src="https://http2.mlstatic.com/D_NQ_NP_2X_893112-MLA84543334006_052025-F.webp" alt="Audífono 1" />
+          <h3>Logitech Mx Brio, Cámara Web Ultra Hd 4k Para Colaboración Color Negro</h3>
+          <p class="precio">$820.000</p>
+          <div class="acciones">
+            <button onclick="agregarAlCarrito('p020')" class="btn agregar">➕ Agregar</button>
+            <button class="btn enviar" onclick="abrirModal()">🛒 Tu Carrito</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Microfonos">
+     <!-- 🔹 SECCIÓN: Micrófonos -->
+<section class="seccion-productos">
+  <h2>Micrófonos</h2>
+  <div class="grid-productos">
+
+    <div class="producto-card">
+      <img src="https://http2.mlstatic.com/D_NQ_NP_2X_773236-MLA84856704681_052025-F.webp" alt="Micrófono Audio-Technica AT2020" />
+      <h3>Micrófono Condensador Audio-Technica AT2020 Color Negro</h3>
+      <p class="precio">$430.000</p>
+      <div class="acciones">
+        <button onclick="agregarAlCarrito('p021')" class="btn agregar">➕ Agregar</button>
+        <button class="btn enviar" onclick="abrirModal()">🛒 Tu Carrito</button>
+      </div>
+    </div>
+
+    <div class="producto-card">
+      <img src="https://http2.mlstatic.com/D_NQ_NP_2X_652335-MLU70044828764_062023-F.webp" alt="Audífonos HyperX" />
+      <h3>Micrófono Blue Yeti Condensador Omnidireccional color blackoutS</h3>
+      <p class="precio">$465.000</p>
+      <div class="acciones">
+        <button onclick="agregarAlCarrito('p022')" class="btn agregar">➕ Agregar</button>
+        <button class="btn enviar" onclick="abrirModal()">🛒 Tu Carrito</button>
+      </div>
+    </div>
+
+    <div class="producto-card">
+      <img src="https://http2.mlstatic.com/D_NQ_NP_2X_834714-MLU73204494797_122023-F.webp" alt="Audífonos HyperX modelo duplicado" />
+      <h3>Micrófono Fifine T669 Condensador Cardioide color negroS</h3>
+      <p class="precio">$260.000</p>
+      <div class="acciones">
+        <button onclick="agregarAlCarrito('p023')" class="btn agregar">➕ Agregar</button>
+        <button class="btn enviar" onclick="abrirModal()">🛒 Tu Carrito</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="Capturadoras">
+
+    <section class="seccion-productos">
+      <h2>Capturadoras</h2>
+      <div class="grid-productos">
+        <div class="producto-card">
+          <img src="https://http2.mlstatic.com/D_NQ_NP_2X_639663-CBT83919978736_042025-F.webp" alt="Audífono 1" />
+          <h3>Tarjeta De Captura Externa De Elgato Hd60 S, Usb30</h3>
+          <p class="precio">$1.799.000</p>
+          <div class="acciones">
+            <button onclick="agregarAlCarrito('p024')" class="btn agregar">➕ Agregar</button>
+            <button class="btn enviar" onclick="abrirModal()">🛒 Tu Carrito</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 🔹 Repite para: Mas Secciones -->
+</main>
+<div id="modal-carrito" class="modal">
+  <div class="modal-contenido">
+    <span class="cerrar" onclick="cerrarModal()">&times;</span>
+    <h2>🛒 Tu Carrito</h2>
+    <div class="acciones">
+      <button class="vaciar" onclick="vaciarCarrito()">Vaciar carrito</button>
+      <button class="comprar" onclick="comprar()">Comprar</button>
+    </div>
+    <table id="tabla-carrito">
+      <thead>
+        <tr>
+          <th>Producto</th>
+          <th>Nombre</th>
+          <th>Precio</th>
+          <th>Cantidad</th>
+          <th>Total</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div class="total" id="total-final">Total a pagar: $0</div>
+  </div>
+</div>
+
+
+<!-- BOTPRESS -->
+
+    <script src="https://cdn.botpress.cloud/webchat/v3.0/inject.js" defer></script>
+    <script src="https://files.bpcontent.cloud/2025/07/06/07/20250706071328-YQ9VWE43.js" defer></script>
+    <script src="productos.js"></script>
+    
+    <script>
+  function toggleSubmenu() {
+    const submenu = document.querySelector('.submenu-movil');
+    submenu.classList.toggle('active');
+  }
+</script>
+</body>
+</html>
