@@ -279,10 +279,11 @@ body {
   .modal-contenido {
     width: 95%;
     max-width: 95%;
-    height: 90%;
+    max-height: 90vh;
     margin: 30px auto;
     padding: 15px;
     overflow-y: auto;
+    box-sizing: border-box;
   }
 
   .modal h2 {
