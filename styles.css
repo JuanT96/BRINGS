@@ -866,17 +866,18 @@ img {
 
 /*Seccion APCompra/*
 /* Responsive para pantallas pequeñas */
+/* Responsive para móviles */
 @media (max-width: 768px) {
-  .contenedor-pcompra {
+  .contact-wrapper {
     flex-direction: column;
-    text-align: center;
+    padding: 20px;
   }
 
-  .texto-izquierda {
-    text-align: center;
+  .contact-text h2 {
+    font-size: 2rem;
   }
 
-  .texto-izquierda h2 {
-    font-size: 1.5rem;
+  .contact-text p {
+    font-size: 0.95rem;
   }
 }
