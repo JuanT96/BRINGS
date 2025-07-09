@@ -109,6 +109,7 @@ body {
   height: 100%;
   background: rgba(10, 10, 10, 0.85);
   backdrop-filter: blur(8px);
+  overflow-y: auto; /* 👈 NECESARIO PARA SCROLL EN CUALQUIER ORIENTACIÓN */
 }
 
 .modal-contenido {
@@ -123,6 +124,7 @@ body {
   color: #ffffff;
   font-family: 'Poppins', sans-serif;
   animation: brilloRGB 5s linear infinite;
+  box-sizing: border-box;
 }
 
 @keyframes brilloRGB {
