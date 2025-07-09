@@ -26,7 +26,7 @@
 
       <!-- Ícono carrito -->
       <li class="cart-wrapper">
-        <a href="carrito.html" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+        <a href="#carrito" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
       </li>
     </ul>
   </nav>
@@ -67,7 +67,6 @@
 
     <!-- CONTENIDO -->
     <div class="seccion2">
-      
       <div class="texto-izquierda" data-aos="fade-right" data-aos-delay="100">
         <h2 data-aos="fade-up" data-aos-delay="200">PRODUCTOS</h2>
         <p data-aos="fade-up" data-aos-delay="400">
@@ -87,9 +86,8 @@
     </div>  
 </section>
 
-  <section id="soporte" style="height: 100vh;">
-    <br>
-    <div class="seccion3">
+  <section id="soporte">
+    <div class="seccion2">
   <div id="tx2">
     <div id="tx2-1">
       <div class="texto-izquierda" data-aos="fade-right" data-aos-delay="100">
@@ -103,14 +101,93 @@
     <br>
       <img class="robot1" src="ProductosSeccion3/robot1.gif" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1000"/>
   </div>
-
   </section>
-  <section id="contacto" style="height: 100vh; background: #888;"></section>
-  <section id="carrito" style="height: 100vh; background: #aaa;"></section>
-
+  <section id="pcompra">
+  <div id="tx1">
+        <div class="icono-compra">
+      <lord-icon
+      src="https://cdn.lordicon.com/xjkryxnf.json"
+      trigger="in"
+      delay="1500"
+      state="in-reveal"
+      class="icon-lord">
+  </lord-icon>
+</div>
+  <div id="tx1-1">
+      <div class="texto-izquierda" data-aos="fade-right" data-aos-delay="100">
+    <h2 data-aos="fade-right" data-aos-delay="150">PROCESO DE<br> COMPRA</h2>
+    <p data-aos="fade-up" data-aos-delay="300">
+      <strong>¿Cómo Comprar?</strong><br> Comprar en nuestra tienda es rápido, seguro y 100% en línea. Diseñamos un proceso fácil de seguir para que adquieras tus productos favoritos sin complicaciones, desde cualquier lugar del país.
+    </p>
+  <div>
+  </div>
+</div>
+  </section>
+<section id="contactanos">
+    <div class="contact-wrapper">
+      <div class="contact-text">
+        <h2 data-aos="fade-right" data-aos-delay="150">CONTÁCTANOS</h2>
+        <p data-aos="fade-up" data-aos-delay="300">
+          ¿Tienes dudas, necesitas ayuda con tu pedido o quieres saber más sobre nuestros productos? ¡Estamos aquí para ayudarte!
+        </p>
+      </div>
+      <div class="contact-container" data-aos="fade-left" data-aos-delay="400">
+        <form class="contact-form" action="https://formspree.io/f/xzzgljqr" method="POST">
+          <label for="name">Nombre completo</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" required />
+          <label for="subject">Asunto</label>
+          <input type="text" id="subject" name="subject" required />
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <button type="submit">Enviar mensaje</button>
+        </form>
+      </div>
+    </div>
+      <div class="video-background">
+    <video autoplay muted loop playsinline>
+      <source src="Productoscontactanos/contacto.mp4" type="video/mp4">
+      Tu navegador no soporta video HTML5.
+    </video>
+  </div>
+</section>
+  </section>
 </main>
 <footer>
-	
+	<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-section about">
+      <h3>BRINGX: Productos tecnologicos & gamer</h3>
+      <p>Productos importados, 100% originales. Tecnología de punta y lo mejor en gaming a un clic de distancia.</p>
+    </div>
+
+    <div class="footer-section links">
+      <h4>Enlaces rápidos</h4>
+      <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#productos">Productos</a></li>
+      <li><a href="#soporte">Soporte</a></li>
+      <li><a href="carrito.html">Nuestra Tienda</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section contact">
+      <h4>Contacto</h4>
+      <p>Email: importacionesbringx@gmail.com</p>
+      <p>WhatsApp: +57 300 385 1382</p>
+      <div class="socials">
+        <a href="#"><img src="https://images.vexels.com/content/223136/preview/facebook-icon-social-media-8dfafe.png" alt="Facebook" /></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/4494/4494488.png" alt="Instagram" /></a>
+        <a href="#"><img src="https://icon2.cleanpng.com/20240214/kxl/transparent-tiktok-logo-tiktok-logo-blue-and-pink-lettering-re-retro-style-tiktok-logo-evoking-1950s-1710878265139.webp" alt="TikTok" /></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 BRINGX | Todos los derechos reservados</p>
+  </div>
+</footer>
 </footer>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
@@ -127,6 +204,7 @@
 
     <script src="https://cdn.botpress.cloud/webchat/v3.0/inject.js" defer></script>
     <script src="https://files.bpcontent.cloud/2025/07/06/07/20250706071328-YQ9VWE43.js" defer></script>
+      <script src="https://cdn.lordicon.com/lordicon.js"></script>
     
 </body>
 </html>
