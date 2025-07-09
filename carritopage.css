@@ -273,3 +273,60 @@ body {
     display: none !important;
   }
 }
+
+/*Modal Responsive*/
+@media (max-width: 768px) {
+  .modal-contenido {
+    width: 95%;
+    max-width: 95%;
+    height: 90%;
+    margin: 30px auto;
+    padding: 15px;
+    overflow-y: auto;
+  }
+
+  .modal h2 {
+    font-size: 1.5rem;
+  }
+
+  .modal .acciones {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+    margin-top: 15px;
+  }
+
+  .modal .acciones button {
+    width: 100%;
+    padding: 10px;
+  }
+
+  #tabla-carrito {
+    font-size: 0.85rem;
+    table-layout: fixed;
+    word-wrap: break-word;
+  }
+
+  #tabla-carrito th,
+  #tabla-carrito td {
+    padding: 8px;
+  }
+
+  #tabla-carrito td img {
+    width: 45px;
+    height: 45px;
+  }
+
+  #total-final {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .cerrar {
+    font-size: 24px;
+    top: 10px;
+    right: 10px;
+  }
+}
