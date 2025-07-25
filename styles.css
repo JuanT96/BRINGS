@@ -7,7 +7,9 @@ html, body {
   font-family: 'Arial', sans-serif;
   background-color: black;
 }
-
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 /* Ícono login fijo en escritorio */
 .login-icon-fixed {
   position: fixed;
@@ -727,6 +729,8 @@ html, body {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin: 0 auto;
+    padding: 20px;
   }
 
   .contact-text h2 {
@@ -739,9 +743,11 @@ html, body {
 
   .contact-container {
     width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
     padding: 20px;
     box-shadow: 0 0 15px #9933ff;
-    margin: -180px 0;
+    position: relative;
   }
 .contact-form input,
 .contact-form textarea {
